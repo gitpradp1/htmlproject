@@ -1,1 +1,1 @@
-echo "build my first project"
+echo "Build my first project: %date% %time%"

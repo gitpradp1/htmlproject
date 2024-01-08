@@ -1,1 +1,1 @@
-echo "Deploy my first project"
+echo "Deploy the first project: %date% %time%"
