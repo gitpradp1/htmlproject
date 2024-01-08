@@ -1,0 +1,1 @@
+echo "Test my first project: %date% %time%"
