@@ -3,22 +3,26 @@ pipeline{
 	stages{
 		stage('Code Build'){
 			steps{
-				echo "Build the code: %date% %time%"
+				echo "Build the code"
+				bat 'Build.bat'
 				}
 		}
 		stage('unit Test'){
 			steps{
-				echo "Test the code: %date% %time%"
+				echo "Test the code"
+				bat 'Test.bat'
 			}
 		}
 		stage('Deploy'){
 			steps{
-				echo "Deploy the code: %date% %time%"
+				echo "Deploy the code"
+				bat 'Deploy.bat'
 			}
 		}
 		stage('Reprt'){
 			steps{
-				echo "Report the error / log: %date% %time%"
+				echo "Report the error / log"
+				bat 'Report.bat'
 			}
 		}
 	}
